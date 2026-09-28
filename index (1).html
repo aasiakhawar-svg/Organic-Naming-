@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Storyboard Practice – Naming Organic Compounds</title>
+<style>
+:root{--bg:#f6f4ec;--card:#fffef8;--ink:#1d3a8a;--muted:#5b6478;--red:#c0392b;--green:#1e7d4b;--bad:#b3261e;--line:#d5d9e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171a28;--card:#1f2233;--ink:#a9c1ff;--muted:#9aa3bd;--red:#ff8a7a;--green:#6fdca0;--bad:#ff8a7a;--line:#33395a}}
+:root[data-theme="dark"]{--bg:#171a28;--card:#1f2233;--ink:#a9c1ff;--muted:#9aa3bd;--red:#ff8a7a;--green:#6fdca0;--bad:#ff8a7a;--line:#33395a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 56px}
+h1{margin:0;font-size:26px;color:var(--red)}
+.sub{color:var(--muted);font-size:14px;margin:2px 0 14px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:2;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);font-weight:700}
+.s{background:var(--card);border:2px solid var(--ink);border-radius:10px;margin:16px 0;overflow:hidden}
+.hd{background:var(--ink);color:var(--card);padding:6px 14px;font-weight:700}
+.body{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.f,.q{padding:12px 14px}
+.f{border-right:1px dashed var(--line)}
+.f h3,.q h3{margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.f p{margin:4px 0}
+.row{margin:8px 0}
+.row label{display:block;font-size:15px;margin-bottom:3px}
+input{width:100%;max-width:100%;font:inherit;padding:6px 8px;border:2px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+input.ok{border-color:var(--green)}input.no{border-color:var(--bad)}
+.fb{font-size:14px;min-height:1em}
+.ok+.fb{color:var(--green)}.no+.fb{color:var(--bad)}
+button{font:inherit;font-weight:700;border:2px solid var(--ink);background:var(--ink);color:var(--card);border-radius:8px;padding:6px 14px;cursor:pointer;margin-top:6px}
+button.alt{background:transparent;color:var(--ink);margin-left:6px}
+.note{color:var(--muted);font-size:13px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Storyboard Practice: Naming Organic Compounds</h1>
+<div class="sub">Pearson Edexcel International GCSE Chemistry (4CH1) · Designed by Aasia Khawar</div>
+<div class="bar"><span id="score">Score: 0 / 0</span><span style="font-weight:400;font-size:13px;color:var(--muted)">Read each frame, then answer and press Check</span></div>
+<div id="g"><div class="s"><div class="hd">Scene 1 · The name is a sentence</div><div class="body"><div class="f"><h3>What to know</h3><p>Every name has four parts:</p><p>PREFIX + LOCANT + STEM + SUFFIX</p><p>Examples: 2-methylpropane | propan-1-ol | but-2-ene</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i0_0">Prefix of 2-methylpropane</label><input id="i0_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f0_0"></div></div><div class="row"><label for="i0_1">Locant of 2-methylpropane</label><input id="i0_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f0_1"></div></div><div class="row"><label for="i0_2">Stem of 2-methylpropane</label><input id="i0_2" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f0_2"></div></div><div class="row"><label for="i0_3">Suffix of 2-methylpropane</label><input id="i0_3" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f0_3"></div></div><button onclick="chk(0)">Check</button><button class="alt" onclick="clr(0)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 2 · Stem: count the carbons</div><div class="body"><div class="f"><h3>What to know</h3><p>Longest chain decides the stem:</p><p>1 C = meth-   2 C = eth-   3 C = prop-   4 C = but-</p><p>Memory trick: Monkeys Eat Peanut Butter</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i1_0">Stem for 2 carbons</label><input id="i1_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f1_0"></div></div><div class="row"><label for="i1_1">Stem for 4 carbons</label><input id="i1_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f1_1"></div></div><button onclick="chk(1)">Check</button><button class="alt" onclick="clr(1)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 3 · Suffix: the homologous series</div><div class="body"><div class="f"><h3>What to know</h3><p>Alkane: C–C only = -ane</p><p>Alkene: C=C = -ene</p><p>Alcohol: –OH = -ol</p><p>Carboxylic acid: –COOH = -oic acid</p><p>Ester = alkyl (from alcohol) + alkanoate (from acid)</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i2_0">Suffix of an alcohol</label><input id="i2_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f2_0"></div></div><div class="row"><label for="i2_1">Suffix of an alkene</label><input id="i2_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f2_1"></div></div><div class="row"><label for="i2_2">Ester made from ethanol + ethanoic acid</label><input id="i2_2" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f2_2"></div></div><button onclick="chk(2)">Check</button><button class="alt" onclick="clr(2)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 4 · Prefix: branches and atoms</div><div class="body"><div class="f"><h3>What to know</h3><p>Branch name = carbon count + -yl: 1 C = methyl, 2 C = ethyl</p><p>Atoms: chloro-, bromo-</p><p>Prefixes go at the front, in alphabetical order</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i3_0">Name of a 2-carbon side chain</label><input id="i3_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f3_0"></div></div><div class="row"><label for="i3_1">Alphabetical order of: methyl, chloro, ethyl, bromo (use commas)</label><input id="i3_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f3_1"></div></div><button onclick="chk(3)">Check</button><button class="alt" onclick="clr(3)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 5 · Locant: where is it?</div><div class="body"><div class="f"><h3>What to know</h3><p>A locant is the number of the carbon holding the branch, C=C or –OH.</p><p>Number from the end that gives the functional group the LOWEST number.</p><p>Hyphen between a number and a letter: propan-2-ol. Comma between two numbers.</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i4_0">In CH3CH(OH)CH2CH3, the –OH is on carbon number</label><input id="i4_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f4_0"></div></div><div class="row"><label for="i4_1">Correct the punctuation: propan2ol</label><input id="i4_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f4_1"></div></div><button onclick="chk(4)">Check</button><button class="alt" onclick="clr(4)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 6 · Four steps to name anything</div><div class="body"><div class="f"><h3>What to know</h3><p>Step 1: Longest chain (with the functional group) gives the stem</p><p>Step 2: Functional group gives the suffix</p><p>Step 3: Number the chain for the lowest locant</p><p>Step 4: Name branches: prefix + locant, then write the full name</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i5_0">Name CH3CH2CH2CH2OH</label><input id="i5_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f5_0"></div></div><button onclick="chk(5)">Check</button><button class="alt" onclick="clr(5)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 7 · Worked examples</div><div class="body"><div class="f"><h3>What to know</h3><p>CH₃CH₂CH₂OH = propan-1-ol</p><p>CH₃CH(OH)CH₃ = propan-2-ol</p><p>CH₂=CHCH₂CH₃ = but-1-ene   |   CH₃CH=CHCH₃ = but-2-ene</p><p>CH₃CH(CH₃)CH₃ = 2-methylpropane</p><p>CH₃CH₂COOH = propanoic acid (the COOH carbon is always C1)</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i6_0">Name CH3CH2CH2CH3</label><input id="i6_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f6_0"></div></div><div class="row"><label for="i6_1">Name CH3COOH</label><input id="i6_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f6_1"></div></div><div class="row"><label for="i6_2">Name CH3CH2CH2CH2Cl</label><input id="i6_2" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f6_2"></div></div><div class="row"><label for="i6_3">Write the formula of but-2-ene</label><input id="i6_3" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f6_3"></div></div><button onclick="chk(6)">Check</button><button class="alt" onclick="clr(6)">Clear</button></div></div></div><div class="s"><div class="hd">Scene 8 · Exam tips and try these</div><div class="body"><div class="f"><h3>What to know</h3><p>Positions matter only from 3–4 carbons up: ethanol and ethene need no number.</p><p>Butane and 2-methylpropane are isomers (both C₄H₁₀).</p><p>Always count the longest chain, not just the one drawn straight.</p><p>Check your specification for the range of compounds you must name.</p></div><div class="q"><h3>Your turn</h3><div class="row"><label for="i7_0">1) CH3CH2CH2CH2OH</label><input id="i7_0" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f7_0"></div></div><div class="row"><label for="i7_1">2) CH3CH(OH)CH2CH3</label><input id="i7_1" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f7_1"></div></div><div class="row"><label for="i7_2">3) CH3CH2CH2COOH</label><input id="i7_2" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f7_2"></div></div><div class="row"><label for="i7_3">4) CH3CH2CH=CH2</label><input id="i7_3" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f7_3"></div></div><div class="row"><label for="i7_4">Name an isomer of butane</label><input id="i7_4" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f7_4"></div></div><button onclick="chk(7)">Check</button><button class="alt" onclick="clr(7)">Clear</button></div></div></div></div>
+<div class="note">Type names in lower case with hyphens, for example propan-2-ol. Formulae can be typed like CH3CH=CHCH3.</div>
+</div>
+<script>
+var S=[
+{t:"The name is a sentence",f:["Every name has four parts:","PREFIX + LOCANT + STEM + SUFFIX","Examples: 2-methylpropane | propan-1-ol | but-2-ene"],
+ q:[["Prefix of 2-methylpropane",["methyl"]],["Locant of 2-methylpropane",["2"]],["Stem of 2-methylpropane",["prop"]],["Suffix of 2-methylpropane",["ane","-ane"]]]},
+{t:"Stem: count the carbons",f:["Longest chain decides the stem:","1 C = meth-   2 C = eth-   3 C = prop-   4 C = but-","Memory trick: Monkeys Eat Peanut Butter"],
+ q:[["Stem for 2 carbons",["eth","eth-"]],["Stem for 4 carbons",["but","but-"]]]},
+{t:"Suffix: the homologous series",f:["Alkane: C–C only = -ane","Alkene: C=C = -ene","Alcohol: –OH = -ol","Carboxylic acid: –COOH = -oic acid","Ester = alkyl (from alcohol) + alkanoate (from acid)"],
+ q:[["Suffix of an alcohol",["ol","-ol"]],["Suffix of an alkene",["ene","-ene"]],["Ester made from ethanol + ethanoic acid",["ethyl ethanoate"]]]},
+{t:"Prefix: branches and atoms",f:["Branch name = carbon count + -yl: 1 C = methyl, 2 C = ethyl","Atoms: chloro-, bromo-","Prefixes go at the front, in alphabetical order"],
+ q:[["Name of a 2-carbon side chain",["ethyl"]],["Alphabetical order of: methyl, chloro, ethyl, bromo (use commas)",["bromo,chloro,ethyl,methyl"]]]},
+{t:"Locant: where is it?",f:["A locant is the number of the carbon holding the branch, C=C or –OH.","Number from the end that gives the functional group the LOWEST number.","Hyphen between a number and a letter: propan-2-ol. Comma between two numbers."],
+ q:[["In CH3CH(OH)CH2CH3, the –OH is on carbon number",["2"]],["Correct the punctuation: propan2ol",["propan-2-ol"]]]},
+{t:"Four steps to name anything",f:["Step 1: Longest chain (with the functional group) gives the stem","Step 2: Functional group gives the suffix","Step 3: Number the chain for the lowest locant","Step 4: Name branches: prefix + locant, then write the full name"],
+ q:[["Name CH3CH2CH2CH2OH",["butan-1-ol"]]]},
+{t:"Worked examples",f:["CH₃CH₂CH₂OH = propan-1-ol","CH₃CH(OH)CH₃ = propan-2-ol","CH₂=CHCH₂CH₃ = but-1-ene   |   CH₃CH=CHCH₃ = but-2-ene","CH₃CH(CH₃)CH₃ = 2-methylpropane","CH₃CH₂COOH = propanoic acid (the COOH carbon is always C1)"],
+ q:[["Name CH3CH2CH2CH3",["butane"]],["Name CH3COOH",["ethanoic acid"]],["Name CH3CH2CH2CH2Cl",["1-chlorobutane"]],["Write the formula of but-2-ene",["ch3ch=chch3"]]]},
+{t:"Exam tips and try these",f:["Positions matter only from 3–4 carbons up: ethanol and ethene need no number.","Butane and 2-methylpropane are isomers (both C₄H₁₀).","Always count the longest chain, not just the one drawn straight.","Check your specification for the range of compounds you must name."],
+ q:[["1) CH3CH2CH2CH2OH",["butan-1-ol"]],["2) CH3CH(OH)CH2CH3",["butan-2-ol"]],["3) CH3CH2CH2COOH",["butanoic acid"]],["4) CH3CH2CH=CH2",["but-1-ene"]],["Name an isomer of butane",["2-methylpropane","methylpropane"]]]}
+];
+var SUB="₀₁₂₃₄₅₆₇₈₉";
+function norm(x){return x.toLowerCase().replace(/[\u2010-\u2015\u2212]/g,"-").replace(/[₀-₉]/g,function(c){return SUB.indexOf(c)}).replace(/\s+/g,"").replace(/\.$/,"")}
+var h="";
+S.forEach(function(s,i){
+ h+='<div class="s"><div class="hd">Scene '+(i+1)+' · '+s.t+'</div><div class="body"><div class="f"><h3>What to know</h3>'+s.f.map(function(x){return"<p>"+x+"</p>"}).join("")+'</div><div class="q"><h3>Your turn</h3>';
+ s.q.forEach(function(q,j){var id=i+"_"+j;h+='<div class="row"><label for="i'+id+'">'+q[0]+'</label><input id="i'+id+'" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f'+id+'"></div></div>'});
+ h+='<button onclick="chk('+i+')">Check</button><button class="alt" onclick="clr('+i+')">Clear</button></div></div></div>';
+});
+document.getElementById("g").innerHTML=h;
+var done={};
+function upd(){var t=0,c=0;S.forEach(function(s,i){s.q.forEach(function(q,j){t++;if(done[i+"_"+j])c++})});document.getElementById("score").textContent="Score: "+c+" / "+t}
+function chk(i){S[i].q.forEach(function(q,j){var id=i+"_"+j,el=document.getElementById("i"+id),fb=document.getElementById("f"+id),v=norm(el.value);
+ if(!v){el.className="";fb.textContent="";done[id]=false;return}
+ var good=q[1].some(function(a){return norm(a)===v||norm(a).replace(/^-/,"")===v});
+ done[id]=good;el.className=good?"ok":"no";fb.textContent=good?"Correct":"Not quite. Re-read the frame and try again."});upd()}
+function clr(i){S[i].q.forEach(function(q,j){var id=i+"_"+j;document.getElementById("i"+id).value="";document.getElementById("i"+id).className="";document.getElementById("f"+id).textContent="";done[id]=false});upd()}
+upd();
+</script>
+</body>
+</html>
